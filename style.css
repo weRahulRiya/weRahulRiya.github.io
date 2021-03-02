@@ -1,0 +1,84 @@
+@media (orientation: landscape) {
+    :root{
+      --text-scale-unit: 1vh;
+    }
+}
+@media (orientation: portrait) {
+    :root {
+      --text-scale-unit: 1vw;
+   }
+}
+
+@font-face {
+   font-family: Texturina;
+   src: url(Texturina.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body, html {
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+.container {
+    background-image: url("BG.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content-box {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    top: 0%;
+    left: 0%;
+    text-align: center;
+}
+
+
+.bg-music {
+	position: absolute;
+	top: 45%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.btn {
+	background-color: transparent;
+	color: #FF0000;
+	font-size: 80px;
+	border: none;
+	display: block;
+	margin: 0 auto;
+	opacity: .85;
+	transition: all linear .2s;
+}
+.btn:hover {
+	opacity: 1;
+}
+.pause {
+    display: none;
+}
+.text {
+    font-family: 'Texturina';
+    font-size: calc(var(--text-scale-unit) * 5);
+    letter-spacing: 4px;
+    color: #FF0000;
+    text-shadow: 0 0 3px #FFFFFF, 0 0 5px #FFFFFF;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+}
+.fa {
+    text-shadow: 0 0 3px #FFFFFF, 0 0 5px #FFFFFF;
+}
